@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employees Detail Form</h1>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="num">Phone Number:</label>
+        <input type="tel" id="num"><br><br>
+
+        <label>Gender: </label>
+        <input type="radio" id="male" name="gen">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gen">
+        <label for="female">Female</label>
+        <input type="radio" id="ot" name="gen">
+        <label for="ot">Other</label> <br><br>
+
+        <label for="details">Job Title</label>
+        <input type="text" placeholder="Enter your job title"><br><br>
+
+        <label for="dep">Department</label>
+        <select name="department" id="dep">
+            <option value="">Select you department</option>
+            <option value="HR">HR</option>
+            <option value="IT">IT</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Rest">Rest</option>
+        </select>
+        <br><br>
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>
