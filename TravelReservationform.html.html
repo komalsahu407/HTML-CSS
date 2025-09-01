@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* General Form Styling */
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Heading */
+form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels */
+form label {
+    display: inline-block;
+    margin: 8px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Inputs, Select & Text fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Checkboxes & Radio */
+form input[type="checkbox"],
+form input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Small text sections (p elements) */
+form p {
+    margin: 12px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+</style>
+</head>
+<body>
+    <form>
+        <h1>Travel Booking form</h1>
+        <label for="name">Fullname</label>
+        <input type="text" id="name" placeholder="FirstName LastName"><br><br>
+        <label for="mail">Email Address:</label>
+        <input type="Email" id="mail" placeholder="Email_Address"><br><br>
+        <label for="tour">Selection Tour Package</label>
+        <select id="tour">
+            <option type="goa"> Goa</option>
+            <option type="Shimla">Shimla</option>
+            <option type="nainitaal">Nainitaal</option>
+            <option type="guwahati">Guwahati</option>
+        </select><br><br>
+        <label for="arrival">Arrival Date</label>
+        <input type="date" id="arrival"><br><br>
+        <label for="number">Number of person</label>
+        <input type="tel" id="number" placeholder="UNKNOWN_TYPE"><br><br>
+        <LABEL>What you want to avail?</LABEL>
+        <label for="bord">Boarding</label>
+        <input type="checkbox" id="bord">
+        <label for="food">Fooding</label>
+        <input type="checkbox" id="food">
+        <label for="sight">Shight seeing</label>
+        <input type="checkbox" id="sight"><br><br>
+        <label for="code">Discount coupon code</label>
+        <input type="tel" id="code" placeholder="UNKNOW_TYPE"><br><br>
+        <label>Term and conditions</label>
+        <input type="radio" id="agree" name="condition">
+        <label for="agree">I agree</label>
+        <input type="radio" id="term" name="condition">
+        <label for="term">I disagree</label><br><br>
+        <button>complete Reservation</button>        
+    </form>
+    
+</body>
+</html>
