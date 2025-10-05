@@ -1,0 +1,79 @@
+/* span{
+    background-color: aquamarine;
+} */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h1{
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    border: 10px solid orange;
+    padding: 20px;
+    box-sizing: content-box;
+    /* display: inline; */
+    
+}
+h2{
+    background-color: brown;
+    height: 300px;
+    width: 300px;
+    border: 10px solid orange;
+    padding: 20px;
+    box-sizing: border-box;
+    /* border box= border-width+padding-width+content-width=width(300)
+    content box=content-width=(300px) */
+
+    /* display: inline-block; */
+}
+span{
+    background-color: aquamarine;
+    color: pink;
+    /* height: 200px;
+    width: 300px; not allowed height width [inline element]
+ */
+    /* padding: 20px;
+    margin: 20px;  horizontal apply padding margin only*/
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 30px;
+    margin-right: 20px;
+    /* padding-top: 50px;
+    padding-bottom: 50px;  visually see */ 
+    padding-left: 12px;
+    padding-right: 20px;
+    /* display: inline-block; */
+}
+ /* Inline Elements
+
+Take only as much width as their content needs.
+
+Do not start on a new line.
+
+Other elements can sit beside them on the same line.
+
+Height and width properties don’t work (ignored by the browser).
+
+Padding and margin work only on left and right (horizontal).
+
+Top and bottom padding/margin appear visually but don’t affect layout.
+
+Common examples: <span>, <a>, <strong>, <em>, <b>, <i> */
+
+
+
+/* Block Elements---
+
+Always start on a new line.
+
+Take the full available width by default.
+
+Height and width properties work properly.
+
+All sides of padding and margin (top, right, bottom, left) work.
+
+You can nest inline or other block elements inside them.
+
+Common examples: <div>, <p>, <h1>–<h6>, <section>, <article>, <header>, <footer> */
